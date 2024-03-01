@@ -50,16 +50,81 @@
       </div>
     </a>
   </body>
-</html>apenas um teste, não é a escolha oficial </h1>
-    <div class='item verde' href='google.com'> 
-      Som e Fúria <br>
-      Luciano e Telmi
-    </div>
-    <div class='item azul' href='google.com'> 
-       Eletiva 2
-    </div>
-    <div class='item amarelo' href='google.com'> 
-      Eletiva 3
-    </div>
+</html>
+Além disso, removi a classe vermelho porque não estava sendo usada. Certifique-se de ajustar os links <a> conforme necessário para apontar para as páginas desejadas.
+
+
+
+User
+centralize as divs e aumente as letras
+ChatGPT
+Para centralizar as <div> e aumentar o tamanho das letras, você pode fazer algumas modificações no CSS. Aqui está o código atualizado:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha de eletiva</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      .item {
+        width: 60%; /* Ajustei a largura para 60% da largura da tela */
+        height: 10%;
+        color: white;
+        padding: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 0; /* Adicionei margem para espaçamento entre as divs */
+      }
+
+      .amarelo {
+        background-color: yellow;
+      }
+
+      .azul {
+        background-color: blue;
+      }
+
+      .verde {
+        background-color: green;
+      }
+
+      .vermelho {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Clique na eletiva de sua preferência e preencha o formulário</h1>
+    <h1>Isso é apenas um teste, não é a escolha oficial</h1>
+    
+    <a class="item verde" href="google.com">
+      <div>
+        Som e Fúria <br>
+        Luciano e Telmi
+      </div>
+    </a>
+    
+    <a class="item azul" href="google.com">
+      <div>
+        Eletiva 2
+      </div>
+    </a>
+    
+    <a class="item amarelo" href="google.com">
+      <div>
+        Eletiva 3
+      </div>
+    </a>
   </body>
 </html>
